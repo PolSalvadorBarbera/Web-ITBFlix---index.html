@@ -1,0 +1,9 @@
+header{
+    text-align: center;
+}
+.pelis{
+    display: flex;
+    flex-direction: row;
+    text-justify: auto;
+    text-align: center;
+}
