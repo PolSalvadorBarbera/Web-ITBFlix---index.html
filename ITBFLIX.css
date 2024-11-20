@@ -1,9 +1,145 @@
-header{
-    text-align: center;
+/*
+    Afecta a tot el còdi
+*/
+body{
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    
 }
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    justify-content: space-around;
+    width: 80%;
+    display: flex;
+}
+a {
+    color: red; /* Color rojo para los enlaces */
+    text-decoration: none;
+    opacity: 60%;
+}
+
+a:hover {
+    
+    text-decoration: none;
+    opacity: 100%;
+    transform: scale(1.2);
+}
+h2{
+    margin: 25px;
+}
+/*
+    Contingut dintre del main
+*/
 .pelis{
     display: flex;
     flex-direction: row;
     text-justify: auto;
     text-align: center;
+    justify-content: space-around;
+}
+.pelis img{
+    object-fit:cover;
+    width: 250px;
+    height: 375px;
+    border-radius: 5%;
+}
+
+.actores{
+    display: flex;
+    flex-direction: row;
+    text-justify: auto;
+    text-align: center;
+    justify-content: space-around;
+}
+.actores img{
+    object-fit:cover;
+    width: 150px;
+    height: 180px;
+    border-radius: 50%; 
+}
+/* Quant paso el ratolí */
+.pelis article:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
+.actores article:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
+
+
+/* Estrenos i Series */
+.containerEstrenosSeries { 
+    display: flex; 
+    justify-content:start;
+    gap: 100px;
+    
+    
+}
+
+.proximosestrenos{
+    display: flex;
+    flex-direction: column;
+    text-justify: auto;
+    justify-content: space-between;
+    border: solid red;
+    text-align: center;
+    gap: 30px;
+
+}
+.proximosestrenos img{
+    object-fit:cover;
+    width: 250px;
+    height: 375px;
+    border-radius: 5%;
+}
+.series{
+    flex: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    border: solid red;
+
+}
+.series img{
+    object-fit:cover;
+    width: 250px;
+    height: 375px;
+    border-radius: 5%;
+}
+
+.proximosestrenos article:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
+.series article:hover {
+    opacity: 70%;
+    transform: scale(1.1);
+}
+
+/* Lo más visto */
+.masVisto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.masVisto img{
+    object-fit:cover;
+    width: 125px;
+    height: 200px;
+    border-radius: 5%; 
+}
+.masVisto article:hover {
+    opacity: 70%;
+    transform: scale(1.1);
 }
