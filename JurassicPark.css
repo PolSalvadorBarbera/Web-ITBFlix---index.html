@@ -1,0 +1,93 @@
+/*
+    Afecta a tot el còdi
+*/
+body{
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    margin: 50px;
+    
+}
+
+/*
+    Encancabezado
+*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+header nav{
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+}
+#navEncabezado2{
+    position:fixed;
+    top: 0%;
+    width: 100;
+    background-color: black;
+    z-index: 1000;
+    padding: 20px 0;
+}
+#navEncabezado2 a {
+    color: red; /* Color rojo para los enlaces */
+    text-decoration: none;
+    opacity: 60%;
+}
+#navEncabezado a:hover {
+    
+    text-decoration: none;
+    opacity: 100%;
+    transform: scale(1.2);
+}
+
+/*
+    Enlaç
+*/
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+
+/*
+    Contingut dintre del main
+*/
+.contenido{
+    display: flex;
+    flex-direction: row;
+    text-justify: auto;
+    text-align:start;
+    justify-content:flex-start;
+    
+}
+.contenido img{
+    object-fit:cover;
+    width: 250px;
+    height: 375px;
+    border-radius: 5%;
+}
+.descripcion{
+    margin: 20px;
+    text-align: justify;
+}
+.trailer{
+    text-align: center;
+    margin: 20px;
+}
+#encabezado {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para mejor alineación */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+    justify-content: center;
+    background-color: #222; /* Puedes ajustar el fondo si es necesario */
+    padding: 20px;
+}
+

@@ -8,31 +8,55 @@ body{
     
 }
 
+/*
+    Encancabezado
+*/
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 header nav{
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
     display: flex;
 }
-a {
+#navEncabezado{
+    position:fixed;
+    top: 0%;
+    width: 100;
+    background-color: black;
+    z-index: 1000;
+    padding: 20px 0;
+}
+#navEncabezado a {
     color: red; /* Color rojo para los enlaces */
     text-decoration: none;
     opacity: 60%;
 }
-
-a:hover {
+#navEncabezado a:hover {
     
     text-decoration: none;
     opacity: 100%;
     transform: scale(1.2);
 }
-h2{
+
+/*
+    Enlaç
+*/
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+h2, h3{
     margin: 25px;
 }
+
 /*
     Contingut dintre del main
 */
@@ -90,7 +114,7 @@ h2{
     justify-content: space-between;
     border: solid red;
     text-align: center;
-    gap: 30px;
+    gap: 50px;
 
 }
 .proximosestrenos img{
@@ -132,6 +156,8 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    font-size: 80%;
+    
 }
 .masVisto img{
     object-fit:cover;
