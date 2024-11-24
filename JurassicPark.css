@@ -82,12 +82,7 @@ a:hover{
     margin: 20px;
 }
 #encabezado {
-    display: flex;
-    flex-direction: column; /* Cambia a columna para mejor alineación */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    background-color: #222; /* Puedes ajustar el fondo si es necesario */
-    padding: 20px;
 }
 
